@@ -1,0 +1,300 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: 1.1px;
+  word-spacing: 1px;
+}
+
+:root {
+  --stdblack: #18191b;
+  --stdwhite: #ffffff;
+  --primarycolor: #fab702;
+  --secondaycolor: #9c9c9d;
+}
+
+img {
+  width: 100%;
+}
+.img_carousel{
+  object-fit: cover;
+}
+
+.input-group-clas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control-clas {
+  border: 1px solid var(--primarycolor);
+  border-right: none;
+  padding: 10px;
+  width: 200px;
+}
+
+.btn2 {
+  background-color: var(--primarycolor);
+  color: var(--stdblack);
+  border-left: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn2:hover {
+  background-color: var(--stdwhite);
+  color: var(--primarycolor);
+}
+
+
+.city_img_clas {
+  height: 400px;
+}
+
+/* Main content */
+.img_carousel {
+  height: 100vh;
+}
+
+.head1 {
+  background-color: #111013;
+}
+
+body {
+  background-color: #18191b;
+}
+
+.process {
+  background-image: url(../images/bg-2.jpg);
+  background-position: center;
+  background-size: cover;
+  position: sticky;
+  background-attachment: fixed;
+}
+
+
+
+.ho a:hover,
+.hovv a:hover {
+  color: var(--stdblack) !important;
+  background-color: var(--primarycolor);
+}
+
+.foot a:hover {
+  color: var(--primarycolor) !important;
+}
+
+.imout {
+  outline: 1px solid white;
+  outline-offset: -15px;
+}
+
+
+
+
+p {
+  color: var(--secondaycolor);
+  font-size: 15px;
+}
+
+.secnav {
+  background-color: var(--stdblack);
+}
+
+.project1 {
+  position: relative;
+  padding-top: 20px;
+}
+
+.proimg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(27, 24, 24, 0.548);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+
+.project1:hover .overlay {
+  transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text3 {
+  color: #111013;
+  padding: 80px 50px 50px 50px;
+  font-weight: bold;
+}
+
+.pro1 {
+  padding-top: 30px;
+}
+
+.fig1 {
+  margin-top: 30px;
+}
+
+.exsec {
+  background-image: url(https://images.unsplash.com/photo-1469401258206-4e0cc14e9358?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  object-fit: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding-bottom: 50px;
+}
+
+.imgsec {
+  height: 160px;
+  object-fit: cover;
+  width: 160px;
+  margin-top: 20px;
+  border: 2px solid white;
+}
+
+.ins {
+  background-color: #18191b;
+}
+
+.project3 {
+  position: relative;
+  padding-top: 20px;
+}
+
+.im3 {
+  display: block;
+  width: 100%;
+}
+
+.overlay1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--primarycolor);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.project3:hover .overlay1 {
+  width: 100%;
+}
+
+.customer {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5), /* Change the first value (0.5) for gradient opacity */
+    rgba(0, 0, 0, 0.5)
+), url('/images/customer_bg.avif');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.block1 {
+  background-color: #111013;
+}
+
+.quo {
+  line-height: 50px;
+  font-size: 25px;
+}
+
+.qu {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primarycolor);
+}
+
+.foot {
+  background-color: var(--stdblack);
+  margin-top: 20px;
+}
+
+.foot li,
+.foot a {
+  color: var(--secondaycolor);
+}
+
+span {
+  color: var(--primarycolor);
+}
+
+.tabi {
+  margin-left: 50px;
+}
+
+.owl-carousel .item {
+  text-align: center;
+  padding: 30px 0;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.owl-carousel .item img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+  .process,
+  .customer {
+    height: 500px;
+  }
+
+  
+
+  .exsec {
+    height: 400px;
+  }
+
+  .mh {
+    padding-bottom: 300px;
+  }
+
+  .dwhat {
+    padding-bottom: 30px;
+  }
+
+  .fig1 {
+    margin-top: 0;
+  }
+
+  .lat {
+    margin-bottom: 5px;
+  }
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 0 !important;
+  height: 0 !important;
+  text-indent: 0 !important;
+  border-radius: 50% !important;
+  color: #fab702 !important;
+  margin-right: 30px !important;
+}
